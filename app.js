@@ -16,7 +16,7 @@ var bodyParser = require("body-parser")
 
 var app = express();
 mongo.connect();
-app.use(cors({ origin:"http://kd-crm.netlify.app", credentials: true }));
+app.use(cors({ origin:"*", credentials: true }));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
